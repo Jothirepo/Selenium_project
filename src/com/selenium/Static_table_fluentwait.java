@@ -63,5 +63,7 @@ public class Static_table_fluentwait {
 			}});
 			
 		System.out.println(prof.getText());
+		
+		
  
 }}

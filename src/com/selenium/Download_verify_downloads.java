@@ -29,7 +29,7 @@ public class Download_verify_downloads {
 		
 		File fileloc = new File("C:\\Users\\jovin\\Downloads\\selenium");		//file is a class to access files in our system thru selenium 
 		
-		File[] allFiles = fileloc.listFiles();							//listfiles() used to list all the downloaded files
+		File[] allFiles = fileloc.listFiles();									//listfiles() used to list all the downloaded files
 		
 		for (File file : allFiles) {											//for each to iterate all the files
 			
