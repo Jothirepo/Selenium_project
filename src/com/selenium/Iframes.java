@@ -4,14 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Iframes {
 
 	public static void main(String[] args) throws InterruptedException {
-
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\jovin\\Documents\\eclipse-java-2019-12-R-win32-x86_64\\eclipse\\Selenium\\Driver\\chromedriver.exe");
-
+				"C:\\Users\\jovin\\Pictures\\Screenshots\\Java_Programs\\chromedriver.exe");
+		
 		WebDriver driver = new ChromeDriver();
 
 		driver.get("http://demo.automationtesting.in/Frames.html");
