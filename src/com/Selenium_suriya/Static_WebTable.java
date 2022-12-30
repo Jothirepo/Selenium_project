@@ -1,6 +1,7 @@
 package com.Selenium_suriya;
 
 import java.util.List;
+import java.util.ListIterator;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -9,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Static_WebTable {
+
+	static int index = 0;
 
 	public static void main(String[] args) {
 
@@ -58,19 +61,12 @@ public class Static_WebTable {
 
 		System.out.println("********************************************************");
 
-		List<WebElement> headings = driver.findElements(By.xpath("//table[@id='table02']/thead/tr/th"));
-		for (WebElement webElement : headings) {
-
-			System.out.println("headers by xpath : " + webElement.getText());
-		}
-		
-		System.out.println("********************************************************");
-
 		List<WebElement> headers = driver.findElements(By.tagName("th"));
 		for (WebElement webElement : headers) {
 
 			System.out.println("headers by tagname : " + webElement.getText());
 		}
+
 	}
 
 }
